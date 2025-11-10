@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ledger Live Desktop | Secure Crypto Portfolio & Wallet Management</title>
+  <meta name="description" content="Ledger Live Desktop is the official desktop app for Ledger hardware wallets. Learn how to install, use, and manage your crypto portfolio securely with Ledger Live Desktop." />
+  <meta name="keywords" content="Ledger Live Desktop, Ledger wallet, Ledger Live download, Ledger Live app, Ledger crypto manager" />
+
+  <style>
+    :root{
+      --bg-gradient: radial-gradient(circle at 30% 20%, #0f2027, #203a43, #2c5364);
+      --card-bg: rgba(255,255,255,0.04);
+      --accent1: #3dd7c3;
+      --accent2: #4f8cff;
+      --muted: #9baac3;
+      --radius: 14px;
+      --maxw: 1100px;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background: var(--bg-gradient);
+      color: #f0faff;
+      -webkit-font-smoothing: antialiased;
+      display:flex;justify-content:center;
+      padding:28px;
+    }
+    .container{width:100%;max-width:var(--maxw);display:grid;gap:28px}
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 24px;border-radius:var(--radius);
+      background:rgba(255,255,255,0.05);backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,0.07);
+    }
+    .logo{font-size:22px;font-weight:700;background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+    nav a{
+      color:var(--muted);text-decoration:none;margin-left:14px;font-weight:500;
+      transition:color .2s ease;
+    }
+    nav a:hover{color:var(--accent1)}
+    
+    /* HERO SECTION */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;
+      background:linear-gradient(120deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));
+      border-radius:var(--radius);padding:40px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.4);
+    }
+    .hero h1{font-size:38px;line-height:1.1;margin-bottom:16px;}
+    .hero p{color:var(--muted);margin-bottom:24px;}
+    .btn{
+      padding:12px 22px;border-radius:12px;border:none;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#062321;font-weight:700;cursor:pointer;
+      transition:transform .25s ease;
+    }
+    .btn:hover{transform:scale(1.05);}
+    .hero-img{
+      background:radial-gradient(circle at 50% 50%,rgba(79,140,255,0.15),rgba(0,0,0,0.3));
+      border-radius:var(--radius);
+      display:flex;align-items:center;justify-content:center;
+      padding:12px;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+    .hero-img img{
+      width:100%;
+      max-width:320px;
+      border-radius:16px;
+      box-shadow:0 8px 28px rgba(0,0,0,0.5);
+    }
+
+    /* SECTIONS */
+    section{
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      padding:28px;
+      border:1px solid rgba(255,255,255,0.07);
+    }
+    h2{font-size:26px;margin-bottom:12px;}
+    h3{margin-top:14px;color:#d5ecff;}
+    p,li{color:var(--muted);}
+    ul{margin:10px 0 0 20px;}
+    .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px;}
+    .card{
+      background:rgba(255,255,255,0.03);
+      border-radius:12px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,0.05);
+      transition:transform .3s ease;
+    }
+    .card:hover{transform:translateY(-6px);}
+    
+    /* TESTIMONIALS */
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;}
+    .testimonial{
+      background:rgba(255,255,255,0.03);
+      border-radius:12px;padding:18px;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+    .testimonial strong{display:block;margin-bottom:8px;color:var(--accent1);}
+    
+    /* CONTACT */
+    form{display:grid;gap:12px;margin-top:12px;}
+    input,textarea{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:12px;border-radius:8px;color:#fff;
+    }
+    textarea{min-height:100px;}
+    footer{
+      text-align:center;padding:12px;color:var(--muted);
+      font-size:13px;border-top:1px solid rgba(255,255,255,0.05);
+    }
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Ledger Live Desktop</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Manage Your Crypto Safely with Ledger Live Desktop</h1>
+        <p>Ledger Live Desktop is the official desktop application from Ledger that empowers you to securely manage, stake, and grow your digital assets. Designed for performance and protection, it connects directly with your Ledger hardware wallet, keeping your private keys offline while you enjoy seamless access to your portfolio.</p>
+        <button class="btn" onclick="window.open('https://www.ledger.com/ledger-live','_blank')">Download Ledger Live Desktop</button>
+      </div>
+      <div class="hero-img">
+        <img src="https://www.ledger.com/wp-content/uploads/2022/01/nano-x-hero-1.png" alt="Ledger Nano X Wallet">
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <h2>Key Features of Ledger Live Desktop</h2>
+      <p>Ledger Live Desktop offers a unified interface for managing your entire crypto portfolio. Whether you're a beginner or advanced investor, this app provides the tools and confidence to transact securely.</p>
+      <div class="grid3">
+        <div class="card">
+          <h3>All-in-One Dashboard</h3>
+          <p>View balances, transactions, and asset performance at a glance — all from one sleek interface.</p>
+        </div>
+        <div class="card">
+          <h3>Secure Transactions</h3>
+          <p>With Ledger Live Desktop, all crypto transactions are verified through your Ledger hardware wallet, ensuring your private keys never leave the device.</p>
+        </div>
+        <div class="card">
+          <h3>Staking & Swaps</h3>
+          <p>Stake coins and swap assets directly within Ledger Live Desktop without compromising your security.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Ledger Live Desktop</h2>
+      <p>Ledger Live Desktop is more than a wallet — it’s a complete crypto management ecosystem. Built to work seamlessly with Ledger Nano devices, it ensures your digital assets are protected by industry-grade security. Its clean design, consistent updates, and compatibility across Windows, macOS, and Linux make it a must-have for Ledger users worldwide.</p>
+      <h3>Why Choose Ledger Live Desktop?</h3>
+      <ul>
+        <li>Compatible with multiple operating systems.</li>
+        <li>Regular updates and enhanced UI for a smooth experience.</li>
+        <li>Private keys remain isolated inside your hardware wallet.</li>
+        <li>Built by Ledger — a leader in crypto security.</li>
+      </ul>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h2>User Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <strong>Emily R.</strong>
+          <p>“Ledger Live Desktop makes managing my portfolio simple yet incredibly secure. The interface is intuitive, and the peace of mind is priceless.”</p>
+        </div>
+        <div class="testimonial">
+          <strong>David L.</strong>
+          <p>“The staking feature in Ledger Live Desktop is fantastic. I can earn rewards without worrying about my wallet’s safety.”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need help with Ledger Live Desktop? Send us a message below.</p>
+      <form onsubmit="event.preventDefault();document.getElementById('formMsg').innerText='Message sent successfully (demo).';this.reset();">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+      <div id="formMsg" style="margin-top:10px;color:var(--accent1)"></div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ledger Live Desktop | Secure Crypto Portfolio Management
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
